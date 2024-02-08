@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/* Layout  Mobile: 375px, - Desktop: 1440px */
+
+:root {
+  /* COLORS */
+  --primary-green: hsl(75, 94%, 57%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-grey: hsl(0, 0%, 20%);
+  --neutral-dark-grey: hsl(0, 0%, 12%);
+  --neutral-off-black: hsl(0, 0%, 8%);
+  /* FONTS */
+  --font-family: "Inter", sans-serif;
+  /* 400, 600, 700 */
+}
+
+::before,
+::after,
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+body {
+  background-color: var(--neutral-off-black);
+  color: var(--neutral-white);
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 14px;
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+img {
+  max-width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--neutral-dark-grey);
+  border-radius: 20px;
+  /* margin: 0 20px; */
+  padding: 30px;
+}
+.card__img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 20px auto;
+}
+
+section {
+  text-align: center;
+}
+
+.user__name {
+  font-size: 24px;
+  font-weight: 400;
+}
+.user__location {
+  padding-bottom: 20px;
+  color: var(--primary-green);
+  font-weight: 700;
+}
+
+.user__bio {
+  margin: 0 auto 20px auto;
+  font-size: 12px;
+}
+
+.social__link {
+  background-color: var(--neutral-grey);
+  padding: 15px 0;
+  margin: 15px 0;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.social__link:hover {
+  background-color: var(--primary-green);
+  color: var(--neutral-grey);
+  cursor: pointer;
+}
+
+@media (min-width: 400px) {
+  body {
+    padding: 0 20px;
+  }
+  .card {
+    margin: 0 auto;
+    padding: 40px;
+    width: 390px;
+    max-width: 100%;
+  }
+  .user__bio {
+    font-size: 14px;
+  }
+}
