@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/social-links-profile-HRqrxqpM2K)
 - [Live Site URL](https://celadon-nougat-6bff82.netlify.app/)
 
 ## My process
