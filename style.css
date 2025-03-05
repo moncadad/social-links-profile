@@ -54,7 +54,8 @@ img {
   margin: 0 auto 1.25rem auto;
 }
 
-section {
+section,
+nav {
   text-align: center;
 }
 
